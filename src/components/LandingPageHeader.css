@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    color: white;
+    padding: 20px 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.line{
+    border-left: 2px solid gray;
+}
