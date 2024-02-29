@@ -6,7 +6,7 @@
     width: 100%;
     height: 80px;
     color: white;
-    padding: 20px 60px;
+    padding: 20px 40px;
 }
 
 .logo{
@@ -17,7 +17,7 @@
 ul{
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 35px;
 }
 
 a{
@@ -25,6 +25,10 @@ a{
     text-decoration: none;
 }
 
+.active{
+    color: #D9DADC;
+}
+
 .line{
-    border-left: 2px solid gray;
+    border-left: 2px solid #D9DADC;
 }

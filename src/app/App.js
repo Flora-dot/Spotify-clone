@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import '../components/LandingPageHeader.jsx'
+import '../components/LandingPageHeader'
 import { LandingPageHeader } from '../components/LandingPageHeader.jsx';
 
 function App() {
