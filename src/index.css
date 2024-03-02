@@ -1,3 +1,8 @@
+:root{
+  --hero-section-background: #1D75DE;
+  --color-white: #ffffff;
+  --color-black: #000;
+}
 *{
   margin: 0;
   padding: 0;
@@ -10,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  color: #b3b3b3;
+  /* color: #b3b3b3; */
 }
 
 code {

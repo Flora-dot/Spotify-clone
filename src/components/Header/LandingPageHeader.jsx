@@ -1,5 +1,5 @@
 import './LandingPageHeader.css'
-import {Logo} from './Logo';
+import {Logo} from '../Logo';
 export const LandingPageHeader = () => {
     return (<div className='header'>
         <div className='logo'>
