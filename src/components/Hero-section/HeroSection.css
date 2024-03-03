@@ -6,25 +6,26 @@
 }
 
 .hero-content{
-    width: 75%;
+    width: clamp(90%, 90%, 75%);
     height: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 38px;
     color: var(--color-white);
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
     font-weight: 700;
 }
 
 h5{
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
 }
 
 .hero-cta{
@@ -35,13 +36,13 @@ h5{
 }
 
 .get-started-btn{
-    width: 161px;
+    width:  clamp(150px, 30vw, 162px);
     height: 52px;
     padding: 16px 35px;
     border: none;
     color: var(--color-white);
     background-color: var(--color-black);
-    font-size: 13px;
+    font-size: clamp(8px, 1.2vw, 13px);
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 50px;
@@ -49,13 +50,13 @@ h5{
 }
 
 .see-plans-btn{
-    width: 192px;
+    width:  clamp(145px, 40vw, 192px);
     height: 52px;
     padding: 16px 30px;
     border: 2px solid var(--color-white);
     color: var(--color-white);
     background-color: transparent;
-    font-size: 13px;
+    font-size: clamp(8px, 1.5vw, 13px);
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 50px;
