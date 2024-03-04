@@ -28,11 +28,8 @@ h5{
     font-size: clamp(1rem, 2vw, 1.6rem);
 }
 
-.hero-cta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.hero-cta button{
+    margin: 10px;
 }
 
 .get-started-btn{
