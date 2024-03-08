@@ -32,7 +32,8 @@ h5{
     margin: 10px;
 }
 
-.get-started-btn{
+.get-started-btn,
+.see-plans-btn{
     width:  clamp(150px, 30vw, 162px);
     height: 52px;
     padding: 16px 35px;
@@ -51,13 +52,8 @@ h5{
     height: 52px;
     padding: 16px 30px;
     border: 2px solid var(--color-white);
-    color: var(--color-white);
     background-color: transparent;
     font-size: clamp(8px, 1.5vw, 13px);
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 50px;
-    cursor: pointer;   
 }
 
 .terms{
@@ -67,4 +63,5 @@ h5{
 .terms a{
     text-decoration: underline;
     font-weight: 400;
+    color: var(--color-white);
 }

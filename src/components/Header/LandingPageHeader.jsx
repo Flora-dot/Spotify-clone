@@ -1,17 +1,35 @@
-import './LandingPageHeader.css'
-import {Logo} from '../Logo';
+import React, { useState } from "react";
+import "./LandingPageHeader.css";
+import { HeaderMenu } from "./HeaderMenu";
+import { Logo } from "../Logo/Logo";
+import { ReactComponent as MenuIcon } from "../../assets/icons/menu-icon.svg";
+
+// function useState(initialValue) {
+//     let val = initialValue;
+//     function change(newValue) {
+//         val = newValue
+//     }
+//     return [val, change]
+// }
+
 export const LandingPageHeader = () => {
-    return (<div className='header'>
-        <div className='logo'>
-            <Logo />
-        </div>
-        <ul>
-        <li><a href="">Premium</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Download</a></li>
-        <div className='line'></div>
-        <li><a href="" className='active'>Sign up</a></li>
-        <li><a href="" className='active'>Log in</a></li>
-        </ul>
-    </div>);
-}
+    const [showMenu, setMenu] = useState(false);
+
+    const toggleMenu = () => {
+      setMenu(showMenu === false);
+      
+    };
+
+  return (
+    <header className="header">
+      <div className="logo">
+        <Logo useWhite={true} />
+      </div>
+      <MenuIcon className="menu-icon" onClick={toggleMenu} />
+      <div className="menu">
+        <HeaderMenu className={showMenu ? 'mobile' : ''} />
+      </div>
+    </header>
+  );
+};
+
