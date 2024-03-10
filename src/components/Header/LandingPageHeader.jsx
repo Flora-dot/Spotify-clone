@@ -1,23 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "./LandingPageHeader.css";
 import { HeaderMenu } from "./HeaderMenu";
 import { Logo } from "../Logo/Logo";
 import { ReactComponent as MenuIcon } from "../../assets/icons/menu-icon.svg";
 
-// function useState(initialValue) {
-//     let val = initialValue;
-//     function change(newValue) {
-//         val = newValue
-//     }
-//     return [val, change]
-// }
+function useState(initialValue) {
+    let val = initialValue;
+    function change(newValue) {
+        val = newValue
+    }
+    return[val, change]
+}
 
 export const LandingPageHeader = () => {
-    const [showMenu, setMenu] = useState(false);
+    // change menu state
+    const [showMenu, setMenu] = React.useState(false);
 
+    // toggle menu
     const toggleMenu = () => {
       setMenu(showMenu === false);
-      
     };
 
   return (

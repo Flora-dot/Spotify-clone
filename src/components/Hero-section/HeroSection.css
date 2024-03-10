@@ -34,7 +34,7 @@ h5{
 
 .get-started-btn,
 .see-plans-btn{
-    width:  clamp(150px, 30vw, 162px);
+    width:  clamp(140px, 30vw, 162px);
     height: 52px;
     padding: 16px 35px;
     border: none;
@@ -48,12 +48,12 @@ h5{
 }
 
 .see-plans-btn{
-    width:  clamp(145px, 40vw, 192px);
+    width:  clamp(145px, 35vw, 192px);
     height: 52px;
     padding: 16px 30px;
     border: 2px solid var(--color-white);
     background-color: transparent;
-    font-size: clamp(8px, 1.5vw, 13px);
+    font-size: clamp(8px, 1.2vw, 13px);
 }
 
 .terms{

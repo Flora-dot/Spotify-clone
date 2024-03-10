@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <LandingPageHeader/>
-    <HeroSection />
+    <HeroSection amount={119} />
     </>
   );
 }
