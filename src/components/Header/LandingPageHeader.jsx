@@ -18,7 +18,7 @@ export const LandingPageHeader = () => {
 
     // toggle menu
     const toggleMenu = () => {
-      setMenu(showMenu === false);
+      setMenu(!showMenu);
     };
 
   return (
@@ -34,3 +34,13 @@ export const LandingPageHeader = () => {
   );
 };
 
+
+const car = {
+  name: 'Honda',
+  type: 'vehicle',
+  color: 'red',
+}
+
+const {name, type, color} = car;
+
+console.log(name);

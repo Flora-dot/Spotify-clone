@@ -1,0 +1,49 @@
+.premium-section{
+    width: 100%;
+    height: 530px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 50px;
+    margin-top: 0;
+}
+
+.premium-section h1{
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+.offers-container{
+    width: 85%;
+    height: 303px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto 0;
+}
+
+.offers-container .item{
+    width: 285px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+
+.item-icon {
+    width: 142px;
+    height: 142px;
+}
+
+.offer-container h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.offer-container p {
+    font-size: 16px;
+    font-weight: 500;
+}

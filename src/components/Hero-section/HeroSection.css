@@ -23,7 +23,7 @@ h1{
     font-weight: 700;
 }
 
-h5{
+.hero-content h5{
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.6rem);
 }
