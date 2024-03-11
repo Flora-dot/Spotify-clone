@@ -4,13 +4,13 @@ import { HeaderMenu } from "./HeaderMenu";
 import { Logo } from "../Logo/Logo";
 import { ReactComponent as MenuIcon } from "../../assets/icons/menu-icon.svg";
 
-function useState(initialValue) {
-    let val = initialValue;
-    function change(newValue) {
-        val = newValue
-    }
-    return[val, change]
-}
+// function useState(initialValue) {
+//     let val = initialValue;
+//     function change(newValue) {
+//         val = newValue
+//     }
+//     return[val, change]
+// }
 
 export const LandingPageHeader = () => {
     // change menu state
@@ -33,14 +33,3 @@ export const LandingPageHeader = () => {
     </header>
   );
 };
-
-
-const car = {
-  name: 'Honda',
-  type: 'vehicle',
-  color: 'red',
-}
-
-const {name, type, color} = car;
-
-console.log(name);
