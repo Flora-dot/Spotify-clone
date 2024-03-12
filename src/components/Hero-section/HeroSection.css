@@ -1,7 +1,7 @@
 .hero-section{
     width: 100%;
     height: 500px;
-    background-color: var(--hero-section-background);
+    background-color: var(--color-blue);
     padding: 50px;
 }
 

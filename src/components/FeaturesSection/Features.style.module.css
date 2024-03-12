@@ -18,6 +18,7 @@
 .offers-container{
     width: 85%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 40px 0;
@@ -52,7 +53,7 @@
 
 @media (max-width: 500px) {
     .offers-container {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .offers-container .item {
