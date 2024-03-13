@@ -1,4 +1,4 @@
-import Styles from "./Features.style.module.css";
+import Styles from "./Features.module.css";
 
 import { features } from "./data";
 
