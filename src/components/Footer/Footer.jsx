@@ -19,10 +19,9 @@ export default function Footer(){
                 </div>
             </div>
                 <div className={style['footer-icons']}>
-                    <img src={InstagramLogo} alt="" />
-                    {/* <FaFacebookF /> */}
-                    <img src={FacebookLogo} alt="" />
-                    <img src={TwitterLogo} alt="" />
+                    <div><img src={InstagramLogo} alt="" /></div>
+                    <div><img src={FacebookLogo} alt="" /></div>
+                    <div><img src={TwitterLogo} alt="" /></div>
                 </div>
             </div>
             <div className={style['footer-bottom-content']}>

@@ -57,6 +57,7 @@ footer .footer-icons {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    gap: 10px;
 }
 
 footer .footer-icons div {
@@ -64,10 +65,6 @@ footer .footer-icons div {
     height: 54px;
     border-radius: 50%;
     background-color: #222326;
-}
-
-footer .footer-icons div img {
-    
 }
 
 .footer-bottom-content {

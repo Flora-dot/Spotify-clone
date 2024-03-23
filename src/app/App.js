@@ -2,7 +2,9 @@ import './App.css';
 // import { useNavigation } from 'react-router-dom';
 import Landing  from '../pages/Landing';
 import { Login } from './pages/Login';
+import { NotFound } from './pages/NotFound';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
 
 const route = createBrowserRouter([
   {
@@ -12,6 +14,10 @@ const route = createBrowserRouter([
   {
     path: '/Login',
     element: <Login />
+  },
+  {
+    path: '*',
+    element: <NotFound />
   }
 ]);
 function App() {
