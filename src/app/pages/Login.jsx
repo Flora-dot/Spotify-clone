@@ -1,6 +1,9 @@
 import { Logo } from "../../components/Logo/Logo";
 import CustomButton from "../../components/CustomButton";
-import style from './Login.module.css'
+import style from './Login.module.css';
+import FacebookIcon from "../../assets/icons/facebook-logo2.svg"
+import AppleIcon from "../../assets/icons/apple-icon.svg"
+import GoogleIcon from "../../assets/icons/google-icon.svg"
 
 export function Login() {
     return(
@@ -9,9 +12,9 @@ export function Login() {
                 <Logo useWhite={false} />
             </header>
             <section className={style['login-details']}>
-                <CustomButton className={style['facebook-btn']} children={'Continue with facebook'}/>
-                <CustomButton className={style['apple-btn']} children={'Continue with Apple'}/>
-                <CustomButton className={style['google-btn']} children={'Continue with google'}/>
+                <CustomButton className={style['facebook-btn']}> <img src={FacebookIcon} alt="" /> Continue with Facebook </CustomButton >
+                <CustomButton className={style['apple-btn']}><img src={AppleIcon} alt="" /> Continue with Apple</CustomButton>
+                <CustomButton className={style['google-btn']}><img src={GoogleIcon} alt="" /> Continue with google</CustomButton>
                 <div className={style.divider}>
                     <hr />
                     <p>Or</p>
