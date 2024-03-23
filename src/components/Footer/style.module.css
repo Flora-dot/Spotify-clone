@@ -65,6 +65,7 @@ footer .footer-icons div {
     height: 54px;
     border-radius: 50%;
     background-color: #222326;
+    padding: 20px auto;
 }
 
 .footer-bottom-content {
