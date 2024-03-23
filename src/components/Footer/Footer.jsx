@@ -6,7 +6,7 @@ import InstagramLogo from "../../assets/icons/instagram-logo.svg";
 import TwitterLogo from "../../assets/icons/twitter-logo.svg";
 import FacebookLogo from "../../assets/icons/facebook-logo.svg";
 import GlobeIcon from "../../assets/icons/globe-icon.svg"
-import { FaFacebookF } from "react-icons/fa";
+// import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer(){
     return(
@@ -20,7 +20,7 @@ export default function Footer(){
             </div>
                 <div className={style['footer-icons']}>
                     <img src={InstagramLogo} alt="" />
-                    <FaFacebookF />
+                    {/* <FaFacebookF /> */}
                     <img src={FacebookLogo} alt="" />
                     <img src={TwitterLogo} alt="" />
                 </div>

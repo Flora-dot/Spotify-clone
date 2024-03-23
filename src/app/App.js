@@ -10,7 +10,7 @@ const route = createBrowserRouter([
     element: <Landing />,
   },
   {
-    path: '/login',
+    path: '/Login',
     element: <Login />
   }
 ]);
