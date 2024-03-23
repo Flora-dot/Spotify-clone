@@ -134,3 +134,10 @@ div .remember-me label{
     text-align: center;
     margin: 22px 0 18px;
 }
+
+@media (max-width:500px) {
+    .login-details{
+        width: 420px;
+        padding: 0 20px;
+    }
+}
