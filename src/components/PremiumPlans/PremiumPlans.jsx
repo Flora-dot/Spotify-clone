@@ -30,12 +30,11 @@ export const PremiumPlans = () => {
             <h5 className={style["plan-title"]}>{plan.title}</h5>
             <p>{plan.duration}</p>
             <p>{plan.account}</p>
-            {/* {plan.title === "Mini" ? (
-              <hr className={style["hr-mini"]} />
-            ) : (
-              <hr className={style["hr"]} />
-            )} */}
-            <div  className={plan.title === "Mini" ? style['plans-list-mini'] : style['plans-list']}>
+            <div
+              className={
+                plan.title === "Mini" ? style["plans-list-mini"] : style["plans-list"]
+              }
+            >
               <ul>
                 {plan.offers.map(
                   (offer, index) =>
@@ -53,11 +52,9 @@ export const PremiumPlans = () => {
                 children={"VIEW PLANS"}
               />
             </div>
-            <p className={style['terms']}>
-            <a href="#/terms">
-              Terms and conditions apply.
-            </a>
-            1 month free not available for users who have already tried Premium
+            <p className={style["terms"]}>
+              <a href="#/terms">Terms and conditions apply.</a>1 month free not
+              available for users who have already tried Premium
             </p>
           </div>
         ))}

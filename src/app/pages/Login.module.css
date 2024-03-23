@@ -1,0 +1,130 @@
+.login-header {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #D9DADC;
+    display: flex;
+    justify-content: center;
+}
+
+.facebook-btn,
+.apple-btn,
+.google-btn,
+.signup-btn{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.facebook-btn {
+    background-color: var(--color-blue);
+}
+
+.google-btn,
+.signup-btn {
+    background-color: transparent;
+    color: #6A6A6A;
+    border: 1px solid #6A6A6A;
+}
+
+.login-details {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.login-details .divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.login-details .divider hr {
+    width: 196px;
+    border: none;
+    height: 2px;
+    background-color: #D9DADC;
+}
+
+.login-details .divider p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form label {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+input{
+    height: 48px;
+    padding: 10px;
+    border: 2px solid #989595;
+    border-radius: 4px;
+    margin: 0 0 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #6A6A6A;
+    font-size: 16px;
+}
+
+a.forgot-password {
+    font-size: 16px;
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+div .submit {
+    padding: 0 0 17px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #D9DADC;
+}
+
+div .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+div .remember-me input[type="checkbox"]:checked{
+    background-color: #169B45;
+}
+
+div .remember-me label{
+    font-size: 13px;
+}
+
+.login-btn {
+    width: 121px;
+    color: var(--color-black);
+    background-color: var(--color-green);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-details h6 {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin: 22px 0 18px;
+}

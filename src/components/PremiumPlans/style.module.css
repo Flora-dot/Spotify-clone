@@ -96,11 +96,13 @@
     width: 250px;
     height: 330px;
     display: flex;
+    padding: 10px 0 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-top:  2px solid #d3d3d3;
     border-bottom:  3px solid #d3d3d3;
+
 }
 
 .plans-list-mini {
@@ -114,19 +116,21 @@
 
 .plan-card ul span {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
     gap: 10px;
 }
 
 .plan-card ul li {
+    margin: 3px;
     text-align: left;
     font-size: 16px;
     font-weight: 500
 }
 
-.plan-card ul span li img {
-    width: 20px;
-    height: 20px;
+.plan-card ul span img {
+    width: 23px;
+    height: 23px;
 }
 
 .view-plans-btn,
@@ -164,7 +168,7 @@ p.terms {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     gap: 8px;
     margin: 20px 0;
 }

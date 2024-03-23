@@ -1,0 +1,13 @@
+button{
+    width:  clamp(140px, 30vw, 162px);
+    height: 52px;
+    padding: 16px 35px;
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    /* font-size: clamp(8px, 1.2vw, 13px); */
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    border-radius: 50px;
+    cursor: pointer;
+}

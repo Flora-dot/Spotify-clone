@@ -1,18 +1,22 @@
 import './App.css';
-import '../components/Header/LandingPageHeader.jsx'
-import { LandingPageHeader } from '../components/Header/LandingPageHeader.jsx';
-import {HeroSection} from '../components/Hero-section/HeroSection.jsx';
-import { Features } from '../components/FeaturesSection/Features.jsx';
-import { PremiumPlans } from '../components/PremiumPlans/PremiumPlans.jsx';
+// import { useNavigation } from 'react-router-dom';
+import Landing  from '../pages/Landing';
+import { Login } from './pages/Login';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+const route = createBrowserRouter([
+  {
+    path: '',
+    Component: Landing,
+  },
+  {
+    path: '/login',
+    element: <Login />
+  }
+]);
 function App() {
   return (
-    <>
-    <LandingPageHeader/>
-    <HeroSection amount={119} />
-    <Features />
-    <PremiumPlans />
-    </>
+    <RouterProvider router={route}></RouterProvider>
   );
 }
 
