@@ -140,4 +140,8 @@ div .remember-me label{
         width: 420px;
         padding: 0 20px;
     }
+
+    .login-details .divider hr {
+        width: 140px ;
+    }
 }
