@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const route = createBrowserRouter([
   {
     path: '',
-    Component: Landing,
+    element: Landing,
   },
   {
     path: '/login',
