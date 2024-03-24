@@ -22,19 +22,20 @@ export function Login() {
                 </div>
                 <form action="">
                     <label htmlFor="email">Email address or username</label>
-                    <input type="email" id="email" name="email" placeholder="Email address or username" />
+                    <input type="email" id="email" name="email" placeholder="Email address or username" required />
 
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" />
-                </form>
-                <a href="/forgot" className={style['forgot-password']}>Forgot your password?</a>
-                <div className={style.submit}>
-                    <div className={style["remember-me"]}>
-                        <input type="checkbox" id="remember-me" name="remember-me" />
-                        <label htmlFor="remember-me">Remember me</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required />
+                
+                    <a href="/forgot" className={style['forgot-password']}>Forgot your password?</a>
+                    <div className={style.submit}>
+                        <div className={style["remember-me"]}>
+                            <input type="checkbox" id="remember-me" name="remember-me" />
+                            <label htmlFor="remember-me">Remember me</label>
+                        </div>
+                        <CustomButton type='submit' className={style['login-btn']} children={'log in'} />
                     </div>
-                    <CustomButton type='submit' className={style['login-btn']} children={'log in'} />
-                </div>
+                </form>
                 <h6>Don't have an account?</h6>
                 <CustomButton className={style['signup-btn']} children={'sign up for spotify'}/>
             </section>

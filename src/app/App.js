@@ -32,8 +32,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="" element={<Landing />} />
-        <Route path="/login" element={<Login />} /> {/* Use element prop instead of Component */}
-        <Route path="*" element={<NotFound />} /> {/* Add a route for 404 page */}
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
