@@ -6,7 +6,7 @@ export function Logo(props) {
     const logoImage = props.useWhite ? SpotifyWhite : SpotifyBlack ;
     
     return(
-    <a href="#/dashboard" className={style.logo}>
+    <a href="/" className={style.logo}>
         <img src={logoImage} alt="spotifylogo" />
     </a>
     );
