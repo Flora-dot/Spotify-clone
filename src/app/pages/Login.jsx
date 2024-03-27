@@ -61,9 +61,9 @@ export function Login() {
         console.log("I got a login success", response);
         toast(`Signed in as ${email} `);
         localStorage.setItem('user', JSON.stringify(response));
-        setTimeout(function() {
-          window.location.href = '/';
-      }, 1000);
+      //   setTimeout(function() {
+      //     window.location.href = '/';
+      // }, 1000);
       })
       .catch((error) => {
         console.log("I got a login error", error);
