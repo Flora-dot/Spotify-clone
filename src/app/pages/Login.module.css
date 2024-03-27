@@ -83,9 +83,6 @@ input{
     margin: 0 0 8px;
 }
 
-input:focus {
-    outline: none;
-}
 
 input::placeholder {
     color: #6A6A6A;
@@ -112,7 +109,7 @@ div .remember-me {
 }
 
 div .remember-me input[type="checkbox"]:checked{
-    background-color: #169B45;
+    accent-color: #169B45;
 }
 
 div .remember-me label{
@@ -132,7 +129,7 @@ div .remember-me label{
     font-size: 17px;
     font-weight: bold;
     text-align: center;
-    margin: 22px 0 18px;
+    margin: 15px 0 18px;
 }
 
 
@@ -140,7 +137,7 @@ div .remember-me label{
 .not-found {
     background-color: rgb(11, 11, 11);
     color: var(--color-white);
-    padding: 10px 0;
+    padding: 46px 0;
 }
 
 .not-found-content {
