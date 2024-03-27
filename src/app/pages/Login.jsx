@@ -5,7 +5,7 @@ import style from "./Login.module.css";
 import FacebookIcon from "../../assets/icons/facebook-logo2.svg";
 import AppleIcon from "../../assets/icons/apple-icon.svg";
 import GoogleIcon from "../../assets/icons/google-icon.svg";
-import { IsProtectedRoute } from "../hoc/isProtectedRoute";
+// import { IsProtectedRoute } from "../hoc/isProtectedRoute";
 import {  toast } from 'react-toastify';
 
 export function Login() {
