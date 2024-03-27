@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Logo } from "../../components/Logo/Logo";
 import CustomButton from "../../components/CustomButton";
 import style from "./Login.module.css";
@@ -7,6 +7,7 @@ import AppleIcon from "../../assets/icons/apple-icon.svg";
 import GoogleIcon from "../../assets/icons/google-icon.svg";
 // import { IsProtectedRoute } from "../hoc/isProtectedRoute";
 import {  toast } from 'react-toastify';
+import { isUserLogin } from "../../utils/user";
 
 export function Login() {
   const [email, setEmail] = React.useState("");
@@ -61,9 +62,9 @@ export function Login() {
         console.log("I got a login success", response);
         toast(`Signed in as ${email} `);
         localStorage.setItem('user', JSON.stringify(response));
-      //   setTimeout(function() {
-      //     window.location.href = '/';
-      // }, 1000);
+        setTimeout(function() {
+          window.location.href = '/';
+      }, 1000);
       })
       .catch((error) => {
         console.log("I got a login error", error);
@@ -72,8 +73,14 @@ export function Login() {
       .finally(()=>{
         setIsSubmitting(false)
       })
-  };
+  }
   
+  useEffect(() => {
+    const user = isUserLogin();
+    if(user) {
+      window.location.href = '/'
+    }
+  },[])
   return (
     <div>
       <header className={style["login-header"]}>

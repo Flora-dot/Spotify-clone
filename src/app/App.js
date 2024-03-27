@@ -1,5 +1,4 @@
 import './App.css';
-import { IsProtectedRoute } from './hoc/isProtectedRoute';
 import Landing  from './pages/Landing';
 import { Login } from './pages/Login';
 import { NotFound } from './pages/NotFound';
@@ -12,16 +11,11 @@ import 'react-toastify/dist/ReactToastify.css';
 const route = createBrowserRouter([
   {
     path: '',
-    element: <IsProtectedRoute>
-      <Landing />
-    </IsProtectedRoute>,
+    element: <Landing />,
   },
   {
     path: '/Login',
-    element: 
-    <IsProtectedRoute>
-      <Login />
-    </IsProtectedRoute>,
+    element: <Login />
   },
   {
     path: '*',

@@ -76,6 +76,7 @@ footer .footer-icons div {
 footer .bottom-menu {
     list-style: none;
     display: flex;
+    align-items: flex-end;
 }
 
 footer .bottom-menu li {
